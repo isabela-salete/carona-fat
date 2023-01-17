@@ -1,7 +1,7 @@
 allow_embedding: false
-package_name: Material_Design_1
+package_name: Projeto_Oficial
 startup: {type: form, module: Base}
-name: Material Design 1
+name: Projeto Oficial
 startup_form: null
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
