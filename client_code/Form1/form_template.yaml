@@ -8,32 +8,37 @@ components:
   name: content_panel
   layout_properties: {slot: default}
   components:
+  - type: Image
+    properties: {}
+    name: image_1
+    layout_properties: {grid_position: 'KUMWMM,IPVGOX'}
   - type: ColumnPanel
     properties: {col_widths: '{}'}
     name: column_panel_1
     layout_properties: {grid_position: 'KEAWUW,BBVHBS'}
     components:
     - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
         visible: true, text: Faça seu login!, font_size: null, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_2
       layout_properties: {grid_position: 'CEVVWT,IJKUZY'}
     - type: Label
-      properties: {role: input-prompt, align: right, tooltip: '', border: '', foreground: '',
+      properties: {role: input-prompt, align: center, tooltip: '', border: '', foreground: '',
         visible: true, text: 'Email:', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
         underline: false, icon: ''}
       name: label_3
-      layout_properties: {grid_position: 'PSYMNQ,WYUHUH'}
+      layout_properties: {grid_position: 'PSYMNQ,WYUHUH', full_width_row: false}
+      event_bindings: {show: label_3_show}
     - type: TextBox
       properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Digite seu email,
         border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
         font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
         background: '', bold: false, underline: false}
       name: text_box_1
-      layout_properties: {grid_position: 'PSYMNQ,NQORPR'}
+      layout_properties: {grid_position: 'PSYMNQ,MVAABK', full_width_row: false}
 - type: FlowPanel
   properties: {}
   name: navbar_links
