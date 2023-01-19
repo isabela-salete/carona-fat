@@ -1,5 +1,35 @@
 allow_embedding: false
 package_name: Projeto_Oficial
+db_schema:
+  users:
+    title: Users
+    client: none
+    server: full
+    columns:
+    - name: email
+      admin_ui: {width: 200}
+      type: string
+    - name: enabled
+      admin_ui: {width: 200}
+      type: bool
+    - name: last_login
+      admin_ui: {width: 200}
+      type: datetime
+    - name: password_hash
+      admin_ui: {width: 200}
+      type: string
+    - name: n_password_failures
+      admin_ui: {width: 200}
+      type: number
+    - name: confirmed_email
+      admin_ui: {width: 200}
+      type: bool
+    - name: remembered_logins
+      admin_ui: {width: 200}
+      type: simpleObject
+    - name: signed_up
+      admin_ui: {width: 200}
+      type: datetime
 startup: {type: form, module: Base}
 name: Projeto Oficial
 startup_form: null
@@ -7,5 +37,12 @@ runtime_options: {version: 2, client_version: '3', server_version: python3-sandb
   server_spec: null}
 services:
 - source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+- source: /runtime/services/anvil/users.yml
+  client_config: {allow_signup: true, enable_automatically: true, use_email: true,
+    confirm_email: true, allow_remember_me: true, remember_me_days: 365, use_google: true}
+  server_config: {user_table: users}
+- source: /runtime/services/google.yml
   client_config: {}
   server_config: {}

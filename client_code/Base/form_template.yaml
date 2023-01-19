@@ -7,7 +7,14 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
-  components: []
+  components:
+  - type: Label
+    properties: {role: headline, align: left, tooltip: '', border: '', foreground: 'theme:Secondary
+        500', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:user'}
+    name: user_te
+    layout_properties: {}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: Carona FAT, font_size: 35, font: '', spacing_above: small, icon_align: right,
