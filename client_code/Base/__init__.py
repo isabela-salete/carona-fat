@@ -11,9 +11,16 @@ from ..Home import Home
 class Base(BaseTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
+    self.change_sign_user()
     self.init_components(**properties)
     self.content_panel.add_component(Home())
-
+  def change_sign_user(self):
+    user = anvil.users.get_user()
+    if user:
+      email = user["email"]
+      self.user_te.text = email
+    else:
+      self.user_te.text = "Usuário"
     # Any code you write here will run before the form opens.
 
   def label_3_show(self, **event_args):

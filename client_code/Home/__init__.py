@@ -7,6 +7,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.users
 from ..Caronas import Caronas
+from ..Base import *
 
 class Home(HomeTemplate):
   def __init__(self, **properties):
@@ -23,6 +24,7 @@ class Home(HomeTemplate):
 
   def login_click(self, **event_args):
     anvil.users.login_with_form()
+    self.change_sign_user()
     pass
 
 
