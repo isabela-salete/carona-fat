@@ -9,6 +9,7 @@ import anvil.users
 from ..Caronas import Caronas
 from ..Base import *
 
+
 class Home(HomeTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
