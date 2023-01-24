@@ -8,6 +8,14 @@ components:
   name: navbar_links
   layout_properties: {slot: nav-right}
   components:
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:White', visible: true, text: login, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: 'theme:Secondary 500', bold: false, underline: false, icon: ''}
+    name: login
+    layout_properties: {}
+    event_bindings: {click: login_click}
   - type: Label
     properties: {role: headline, align: left, tooltip: '', border: '', foreground: 'theme:Secondary
         500', visible: true, text: '', font_size: null, font: '', spacing_above: small,

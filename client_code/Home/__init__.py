@@ -14,8 +14,15 @@ class Home(HomeTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+    self.vi_carona()
     # Any code you write here will run before the form opens.
+
+  def vi_carona(self):
+    user = anvil.users.get_user()
+    if user:
+      self.botao_carona.visible = True
+    else:
+      self.botao_carona.visible = False
 
   def botao_carona_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -23,10 +30,6 @@ class Home(HomeTemplate):
     self.column_panel.add_component(Caronas())
     pass
 
-  def login_click(self, **event_args):
-    anvil.users.login_with_form()
-    self.change_sign_user()
-    pass
 
 
 
