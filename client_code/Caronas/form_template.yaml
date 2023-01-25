@@ -22,4 +22,8 @@ components:
     name: criar_carona
     layout_properties: {grid_position: 'UDWNKS,AKAPFH'}
     event_bindings: {click: criar_carona_click}
+- type: ColumnPanel
+  properties: {}
+  name: painel_carona
+  layout_properties: {grid_position: 'XMGCLJ,EBEQDY'}
 is_package: true

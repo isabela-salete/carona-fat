@@ -16,13 +16,6 @@ components:
     name: login
     layout_properties: {}
     event_bindings: {click: login_click}
-  - type: Label
-    properties: {role: headline, align: left, tooltip: '', border: '', foreground: 'theme:Secondary
-        500', visible: true, text: '', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: 'fa:user'}
-    name: user_te
-    layout_properties: {}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: Carona FAT, font_size: 35, font: '', spacing_above: small, icon_align: right,
@@ -31,6 +24,19 @@ components:
   name: label_1
   layout_properties: {grid_position: 'JPIALH,DBVPGA', slot: title}
 - type: ColumnPanel
-  properties: {}
+  properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:White', visible: true, text: carona, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: red, bold: false, underline: false, icon: ''}
+    name: carona
+    layout_properties: {grid_position: 'FKYGKU,LNYIQG'}
+    event_bindings: {click: carona_click}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1
+    layout_properties: {grid_position: 'KOIVCL,JCOEJL'}

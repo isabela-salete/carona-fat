@@ -1,5 +1,6 @@
 from ._anvil_designer import BaseTemplate
 from anvil import *
+import anvil.server
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
 import anvil.tables as tables
@@ -7,6 +8,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.users
 from ..Home import *
+from ..Caronas import Caronas
 
 class Base(BaseTemplate):
   def __init__(self, **properties):
@@ -18,10 +20,12 @@ class Base(BaseTemplate):
     user = anvil.users.get_user()
     if user:
       email = user["email"]
-      self.user_te.text = email
+      self.login.text = email
+      self.carona.visible = True
 
     else:
-      self.user_te.text = "Usuário"
+      self.login.text = "Cadastro"
+      self.carona.visible = False
  
 
     # Any code you write here will run before the form opens.
@@ -39,6 +43,13 @@ class Base(BaseTemplate):
     else:
       anvil.users.login_with_form(allow_cancel=True)
     self.change_sign_user()
+
+  def carona_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.content_panel.clear()
+    self.content_panel.add_component(Caronas())
+    pass
+
   
 
 

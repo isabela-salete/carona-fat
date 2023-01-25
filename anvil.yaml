@@ -30,6 +30,26 @@ db_schema:
     - name: signed_up
       admin_ui: {width: 200}
       type: datetime
+    - name: email_confirmation_key
+      admin_ui: {width: 200}
+      type: string
+  carona:
+    title: Table 2
+    client: none
+    server: full
+    columns:
+    - name: ride
+      admin_ui: {width: 200}
+      type: string
+    - name: name
+      admin_ui: {width: 200}
+      type: string
+    - name: destiny
+      admin_ui: {width: 200}
+      type: string
+    - name: time
+      admin_ui: {width: 200}
+      type: string
 startup: {type: form, module: Base}
 name: Projeto Oficial
 startup_form: null
