@@ -24,11 +24,9 @@ class Base(BaseTemplate):
       self.carona.visible = True
 
     else:
-      self.login.text = "Cadastro"
+      self.login.text = "Entrar"
       self.carona.visible = False
  
-
-    # Any code you write here will run before the form opens.
 
   def label_3_show(self, **event_args):
     """This method is called when the Label is shown on the screen"""

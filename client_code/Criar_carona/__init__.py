@@ -10,10 +10,9 @@ from anvil.tables import app_tables
 
 class Criar_carona(Criar_caronaTemplate):
   def __init__(self, **properties):
-    # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-    # Any code you write here will run before the form opens.
+    
 
   def enviar_click(self, **event_args):
     ride = self.ride.selected_value 
@@ -21,8 +20,8 @@ class Criar_carona(Criar_caronaTemplate):
     destiny = self.destiny.text
     time = self.time.text
     try:
-     anvil.server.call('add_txt', name, destiny, time)
-     Notification("A mensagem foi enviada com sucesso").show()
+     anvil.server.call('add_text', ride, name, destiny, time)
+     Notification("A carona foi enviada com sucesso").show()
     except Exception as e:
       Notification(e).show()
 
