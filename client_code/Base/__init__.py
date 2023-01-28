@@ -48,6 +48,13 @@ class Base(BaseTemplate):
     self.content_panel.add_component(Caronas())
     pass
 
+  def link_home_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    self.content_panel.clear()
+    self.content_panel.add_component(Caronas())
+    pass
+
+
   
 
 
