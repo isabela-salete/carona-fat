@@ -55,7 +55,7 @@ db_schema:
       type: string
     - name: vagas
       admin_ui: {order: 5, width: 200}
-      type: string
+      type: number
 startup: {type: form, module: Base}
 name: Projeto Oficial
 startup_form: null

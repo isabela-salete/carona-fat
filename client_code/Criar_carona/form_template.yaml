@@ -93,6 +93,7 @@ components:
       background: '', bold: false, underline: false}
     name: price
     layout_properties: {grid_position: 'ZEGSHF,AXBWCX'}
+    event_bindings: {pressed_enter: price_pressed_enter}
   - type: Label
     properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Vagas:', font_size: null, font: '', spacing_above: small,
