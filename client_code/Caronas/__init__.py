@@ -21,5 +21,5 @@ class Caronas(CaronasTemplate):
     pass
 
   def carregar_caronas(self):
-    caronas = anvil.server.call("get_carona")
+    caronas = anvil.server.call("get_carona").search()
     print(caronas)
