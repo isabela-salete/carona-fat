@@ -12,7 +12,7 @@ import anvil.users
 class Caronas(CaronasTemplate):
   def __init__(self, **properties):
     self.init_components(**properties)
-    self.carregar_caronas()
+    #self.carregar_caronas()
 
   def criar_carona_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -20,6 +20,6 @@ class Caronas(CaronasTemplate):
     self.column_panel_1.add_component(Criar_carona())
     pass
 
-  def carregar_caronas(self):
-    caronas = anvil.server.call("get_carona").search()
-    print(caronas)
+  #def carregar_caronas(self):
+    #caronas = anvil.server.call("get_carona").search()
+    #print(caronas)
