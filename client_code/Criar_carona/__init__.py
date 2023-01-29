@@ -21,11 +21,16 @@ class Criar_carona(Criar_caronaTemplate):
     time = self.time.text
     price = self.price.text
     vagas = self.vagas.text
+    date =self.date.date
     try:
-     anvil.server.call('add_text', ride, name, destiny, time, price, vagas)
+     anvil.server.call('add_text', ride, name, destiny, time, price, vagas, date)
      Notification("A carona foi enviada com sucesso").show()
     except Exception as e:
       Notification(e).show()
+
+
+
+
 
  
 

@@ -18,7 +18,7 @@ components:
     layout_properties: {grid_position: 'ENZCTA,KKWGAL', full_width_row: false, row_background: ''}
   - type: Label
     properties: {}
-    name: label_7
+    name: tipo
     layout_properties: {grid_position: 'ENZCTA,YWCOBS', row_background: '', full_width_row: false}
   - type: Label
     properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
@@ -29,7 +29,7 @@ components:
     layout_properties: {grid_position: 'SIRFUM,AGQIZQ'}
   - type: Label
     properties: {}
-    name: label_8
+    name: nome
     layout_properties: {grid_position: 'SIRFUM,ASTDSX'}
   - type: Label
     properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
@@ -84,3 +84,4 @@ properties:
 - {name: time, type: string, default_value: ''}
 - {name: price, type: string, default_value: ''}
 - {name: vagas, type: number, default_value: ''}
+- {name: date, type: object}

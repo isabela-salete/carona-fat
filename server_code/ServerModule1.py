@@ -7,8 +7,8 @@ from anvil.tables import app_tables
 import anvil.server
 
 @anvil.server.callable
-def add_text(ride, name, destiny, time, price, vagas):   #receber a informação e colocar na tabela
-  app_tables.carona.add_row(ride=ride, name=name, destiny=destiny, time=time, price=price, vagas=vagas)
+def add_text(ride, name, destiny, time, price, vagas, date):   #receber a informação e colocar na tabela
+  app_tables.carona.add_row(ride=ride, name=name, destiny=destiny, time=time, price=price, vagas=vagas, date=date)
 
 @anvil.server.callable
 def get_carona():

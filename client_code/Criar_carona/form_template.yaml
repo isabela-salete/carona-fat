@@ -36,6 +36,15 @@ components:
       include_placeholder: true
     name: ride
     layout_properties: {grid_position: 'ENZCTA,DJANFW', full_width_row: false, row_background: ''}
+  - type: DatePicker
+    properties: {role: null, align: left, max_date: '', pick_time: false, tooltip: '',
+      placeholder: 'Para qual dia?', border: '', enabled: true, foreground: '', visible: true,
+      font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+      date: '', min_date: '', background: '', bold: false, underline: false, format: '%d
+        / %m / %Y'}
+    name: date
+    layout_properties: {grid_position: 'ENZCTA,DJRBJP', row_background: '', full_width_row: false}
+    event_bindings: {change: date_picker_1_change}
   - type: Label
     properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Nome do motorista:', font_size: null, font: '', spacing_above: small,

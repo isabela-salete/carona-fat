@@ -56,6 +56,9 @@ db_schema:
     - name: vagas
       admin_ui: {order: 5, width: 200}
       type: number
+    - name: date
+      admin_ui: {order: 6, width: 200}
+      type: date
 startup: {type: form, module: Base}
 name: Projeto Oficial
 startup_form: null
