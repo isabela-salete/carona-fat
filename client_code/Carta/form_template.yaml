@@ -3,7 +3,9 @@ container:
   properties: {col_widths: '{}'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+    spacing_below: small, background: ''}
   name: column_panel
   layout_properties:
     col_widths: {}
@@ -40,7 +42,7 @@ components:
     layout_properties: {grid_position: 'OVSTHS,NTSUED'}
   - type: Label
     properties: {}
-    name: label_9
+    name: destino
     layout_properties: {grid_position: 'OVSTHS,ULDDVV'}
   - type: Label
     properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
@@ -51,7 +53,7 @@ components:
     layout_properties: {grid_position: 'BOTVEE,AYATJZ'}
   - type: Label
     properties: {}
-    name: label_10
+    name: saida
     layout_properties: {grid_position: 'BOTVEE,LRDQYS'}
   - type: Label
     properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
@@ -62,7 +64,7 @@ components:
     layout_properties: {grid_position: 'ZEGSHF,VBOUDE'}
   - type: Label
     properties: {}
-    name: label_11
+    name: dinheiro
     layout_properties: {grid_position: 'ZEGSHF,HRJFVY'}
   - type: Label
     properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
@@ -73,7 +75,7 @@ components:
     layout_properties: {grid_position: 'XCREUF,TLGVKL'}
   - type: Label
     properties: {}
-    name: label_12
+    name: vagaa
     layout_properties: {grid_position: 'XCREUF,BBDAWV'}
 is_package: true
 custom_component: true

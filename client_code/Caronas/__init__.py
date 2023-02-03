@@ -14,7 +14,8 @@ class Caronas(CaronasTemplate):
   def __init__(self, **properties):
     self.init_components(**properties)
     self.carregar_caronas()
-    self.column_panel_1.add_component(Carta(name="name", ride="ride",destiny="destiny", time="time", price="price", vagas="vagas", date="date"))
+    
+    
 
   def criar_carona_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -26,4 +27,5 @@ class Caronas(CaronasTemplate):
     caronas = anvil.server.call("get_carona").search()
 
     for carona in caronas:
-     print(carona["name"])
+     c = Carta(name=carona['name'], ride=carona['ride'],destiny=carona['destiny'], time=carona['time'], price=carona['price'], vagas=carona['vagas'], date=carona['date'])
+     self.column_panel_1.add_component(c)

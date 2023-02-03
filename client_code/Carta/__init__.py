@@ -9,15 +9,15 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class Carta(CartaTemplate):
-  def __init__(self, ride, name, destiny, time, price, vagas, date, **properties):
+  def __init__(self, ride, name, destiny, time, price, vagas, **properties):
     self.init_components(**properties)
-    self.ride = ride
+    self.tipo.text = ride
     self.nome.text = name
-    self.destiny = destiny
-    self.time = time
-    self.price = price
-    self.vagas = vagas
-    self.date = date
+    self.destino.text = destiny
+    self.saida.text = time
+    self.dinheiro.text = price
+    self.vagaa.text = vagas
+    #self.date.date = date
     
 
     # Any code you write here will run before the form opens.
