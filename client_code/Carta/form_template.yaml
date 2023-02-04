@@ -92,7 +92,44 @@ components:
   - type: Label
     properties: {}
     name: vagaa
-    layout_properties: {grid_position: 'XCREUF,BBDAWV'}
+    layout_properties: {grid_position: 'XCREUF,XOUIIN TJTRAA,MXCTWU'}
+  - type: TextBox
+    properties: {}
+    name: vaga1
+    layout_properties: {grid_position: 'XCREUF,XOUIIN KXEVJC,UBEEBM'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_3
+    layout_properties: {grid_position: 'YPRWYB,WOFEWG'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: vaga2
+    layout_properties: {grid_position: 'YPRWYB,SWZGVU'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_4
+    layout_properties: {grid_position: 'CNMGRN,ZXSEDX'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: vaga3
+    layout_properties: {grid_position: 'CNMGRN,ZQFAFM'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_5
+    layout_properties: {grid_position: 'ZYVSCA,OKACQO'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: vaga4
+    layout_properties: {grid_position: 'ZYVSCA,HFKLDI'}
 is_package: true
 custom_component: true
 properties:
@@ -103,3 +140,6 @@ properties:
 - {name: price, type: string, default_value: ''}
 - {name: vagas, type: number, default_value: ''}
 - {name: date, type: object}
+- {name: vagaa1, type: string, default_value: ''}
+- {name: vagaa2, type: string, default_value: ''}
+- {name: vagaa3, type: string, default_value: ''}
