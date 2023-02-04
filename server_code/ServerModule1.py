@@ -16,6 +16,6 @@ def get_suacarona(id_carona):
 
 @anvil.server.callable
 def get_carona():
-  return app_tables.carona.client_readable()
+    return app_tables.carona.client_readable(tables.order_by("date", ascending=True))
 
   

@@ -23,7 +23,7 @@ class Caronas(CaronasTemplate):
     pass
 
   def carregar_caronas(self):
-    caronas = anvil.server.call("get_carona").search()
+    caronas = anvil.server.call("get_carona").search(tables.order_by("date", ascending=False))
     caronas_panel = GridPanel()
 
     for i, carona in enumerate(caronas):
