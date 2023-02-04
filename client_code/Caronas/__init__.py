@@ -23,7 +23,10 @@ class Caronas(CaronasTemplate):
 
   def carregar_caronas(self):
     caronas = anvil.server.call("get_carona").search()
+    caronas_panel = GridPanel()
 
-    for carona in caronas:
+    for i, carona in enumerate(caronas):
      c = Carta(name=carona['name'], ride=carona['ride'],destiny=carona['destiny'], time=carona['time'], price=carona['price'], vagas=carona['vagas'], date=carona['date'])
-     self.column_panel_1.add_component(c)
+     caronas_panel.add_component(c, row=str(i//2), width_xs=6)
+     
+    self.column_panel_1.add_component(caronas_panel)
