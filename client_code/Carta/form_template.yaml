@@ -11,17 +11,14 @@ components:
     col_widths: {}
     grid_position: HXLAZV,VBZYBC
   components:
-  - type: Label
-    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Tipo de Carona:', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-      underline: false, icon: ''}
-    name: label_4
-    layout_properties: {grid_position: 'ENZCTA,KKWGAL', full_width_row: false, row_background: ''}
-  - type: Label
-    properties: {}
-    name: tipo
-    layout_properties: {grid_position: 'ENZCTA,YWCOBS', row_background: '', full_width_row: false}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1
+    layout_properties: {grid_position: 'ENZCTA,FIWVCG', row_background: '', full_width_row: false}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_2
+    layout_properties: {grid_position: 'ENZCTA,GDIQBJ', row_background: '', full_width_row: false}
   - type: DatePicker
     properties: {role: null, align: left, max_date: '', pick_time: false, tooltip: '',
       placeholder: '', border: '', enabled: true, foreground: '', visible: true, font_size: null,
@@ -29,7 +26,18 @@ components:
       min_date: '', background: '', bold: false, underline: false, format: '%d / %m
         / %Y'}
     name: dia
-    layout_properties: {grid_position: 'ENZCTA,VJLUNE', row_background: '', full_width_row: false}
+    layout_properties: {grid_position: 'ENZCTA,MQFOEV', row_background: '', full_width_row: false}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Tipo de Carona:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_4
+    layout_properties: {grid_position: 'GFHQMG,IOAITL', full_width_row: false, row_background: ''}
+  - type: Label
+    properties: {}
+    name: tipo
+    layout_properties: {grid_position: 'GFHQMG,KJJCQT', row_background: '', full_width_row: false}
   - type: Label
     properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Nome do motorista:', font_size: null, font: '', spacing_above: small,
