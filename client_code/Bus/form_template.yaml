@@ -1,0 +1,105 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties: {grid_position: 'NWXFUG,XUSKJB'}
+  components:
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Secondary
+        500', visible: true, text: Saída da UERJ, font_size: 28, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: 'theme:Gray
+        200', bold: true, underline: false, icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'JJIOOT,LOZQLE'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
+        500', visible: true, text: Saída da Rodoviária, font_size: 28, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: 'theme:Gray
+        200', bold: true, underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'JJIOOT,ELMBKD'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '12:20', font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_4
+    layout_properties: {grid_position: 'JBTKAJ,CUBSLD'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '12:50', font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_3
+    layout_properties: {grid_position: 'JBTKAJ,OJEKWK'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '13:20', font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_6
+    layout_properties: {grid_position: 'BTBAOQ,HBVOTG'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '13:50', font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_5
+    layout_properties: {grid_position: 'BTBAOQ,DUWWND'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '14:30', font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_8
+    layout_properties: {grid_position: 'UXNUHD,OFCFSM'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '15:10', font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_7
+    layout_properties: {grid_position: 'UXNUHD,NILGQD'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '17:00', font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_10
+    layout_properties: {grid_position: 'VJLYSV,YDGYYI'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '17:40', font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_9
+    layout_properties: {grid_position: 'VJLYSV,DENYJD'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '19:00', font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_11
+    layout_properties: {grid_position: 'PIOTNE,MGUPDN'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '19:40', font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_12
+    layout_properties: {grid_position: 'PIOTNE,UUFQIU'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '21:00', font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_13
+    layout_properties: {grid_position: 'TRKVQA,VVMUCE'}
+  - type: Label
+    properties: {}
+    name: label_14
+    layout_properties: {grid_position: 'TRKVQA,RKSTYO'}
+is_package: true

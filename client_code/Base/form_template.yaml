@@ -4,7 +4,8 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: FlowPanel
-  properties: {}
+  properties: {role: null, spacing: medium, align: left, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
   name: navbar_links
   layout_properties: {slot: nav-right}
   components:
@@ -12,7 +13,7 @@ components:
     properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
       foreground: 'theme:White', visible: true, text: login, font_size: null, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: 'theme:Secondary 500', bold: false, underline: false, icon: ''}
+      background: 'theme:Primary 700', bold: false, underline: false, icon: ''}
     name: login
     layout_properties: {}
     event_bindings: {click: login_click}

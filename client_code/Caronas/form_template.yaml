@@ -15,13 +15,21 @@ components:
     name: label_1
     layout_properties: {grid_position: 'UDWNKS,QAFDMV'}
   - type: Button
-    properties: {role: primary-color, align: right, tooltip: '', border: '', enabled: true,
+    properties: {role: secondary-color, align: right, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Criar  carona, font_size: null, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: true, underline: false, icon: ''}
     name: criar_carona
-    layout_properties: {grid_position: 'UDWNKS,AKAPFH'}
+    layout_properties: {grid_position: 'UDWNKS,AKAPFH GJDKKK,APYKLK'}
     event_bindings: {click: criar_carona_click}
+  - type: Button
+    properties: {role: null, align: right, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:White', visible: true, text: Horário do ônibus, font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: 'theme:Primary 500', bold: true, underline: false, icon: ''}
+    name: onibus
+    layout_properties: {grid_position: 'UDWNKS,AKAPFH NVTBXN,NUMQOB'}
+    event_bindings: {click: onibus_click}
 - type: ColumnPanel
   properties: {}
   name: painel_carona
