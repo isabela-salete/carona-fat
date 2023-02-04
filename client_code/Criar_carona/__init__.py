@@ -13,7 +13,6 @@ class Criar_carona(Criar_caronaTemplate):
     self.init_components(**properties)
 
     
-
   def enviar_click(self, **event_args):
     ride = self.ride.selected_value 
     name = self.name.text
