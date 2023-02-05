@@ -92,44 +92,25 @@ components:
   - type: Label
     properties: {}
     name: vagaa
-    layout_properties: {grid_position: 'XCREUF,XOUIIN TJTRAA,MXCTWU'}
-  - type: TextBox
-    properties: {}
-    name: vaga1
-    layout_properties: {grid_position: 'XCREUF,XOUIIN KXEVJC,UBEEBM'}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_3
-    layout_properties: {grid_position: 'YPRWYB,WOFEWG'}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false}
-    name: vaga2
-    layout_properties: {grid_position: 'YPRWYB,SWZGVU'}
+    layout_properties: {grid_position: 'XCREUF,XOUIIN'}
   - type: Spacer
     properties: {height: 32}
     name: spacer_4
     layout_properties: {grid_position: 'CNMGRN,ZXSEDX'}
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Vagas Ocupadas:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_7
+    layout_properties: {grid_position: 'HAKBLJ,ELKCIZ'}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false}
-    name: vaga3
-    layout_properties: {grid_position: 'CNMGRN,ZQFAFM'}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_5
-    layout_properties: {grid_position: 'ZYVSCA,OKACQO'}
-  - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false}
-    name: vaga4
-    layout_properties: {grid_position: 'ZYVSCA,HFKLDI'}
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: 'Formato:
+        Vaga 1, Vaga 2, Vaga 3 ', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: 14, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: textbox
+    layout_properties: {grid_position: 'HAKBLJ,ZSJUJZ'}
   - type: Button
     properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: pegar, font_size: null, font: '', spacing_above: small,
@@ -148,3 +129,4 @@ properties:
 - {name: price, type: string, default_value: ''}
 - {name: vagas, type: number, default_value: ''}
 - {name: date, type: object}
+- {name: textbox, type: string, default_value: ''}

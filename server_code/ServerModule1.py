@@ -14,4 +14,7 @@ def add_text(ride, name, destiny, time, price, vagas, date):   #receber a inform
 def get_carona():
     return app_tables.carona.client_writable(tables.order_by("date", ascending=True))
 
+
+  
+
   
