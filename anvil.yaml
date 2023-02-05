@@ -35,7 +35,7 @@ db_schema:
       type: string
   carona:
     title: Table 2
-    client: none
+    client: full
     server: full
     columns:
     - name: ride
@@ -59,6 +59,18 @@ db_schema:
     - name: date
       admin_ui: {order: 6, width: 200}
       type: date
+    - name: vaga1
+      admin_ui: {order: 7, width: 200}
+      type: string
+    - name: vaga2
+      admin_ui: {order: 8, width: 200}
+      type: string
+    - name: vaga3
+      admin_ui: {order: 9, width: 200}
+      type: string
+    - name: vaga4
+      admin_ui: {order: 10, width: 200}
+      type: string
 startup: {type: form, module: Base}
 name: Projeto Oficial
 startup_form: null

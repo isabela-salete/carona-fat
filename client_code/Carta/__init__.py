@@ -19,17 +19,11 @@ class Carta(CartaTemplate):
     self.vagaa.text = vagas
     self.dia.date = date
     
-
-  def pegarela(self, **properties):
-    self.vagaa.text = vagas
-    if vagas >= 2:
-      self.vaga2.visible = True
-    elif vagas >= 3:
-      self.vaga3.visible = True
-    else:
-      self.vaga4.visible = True
-    
-    
-
     # Any code you write here will run before the form opens.
+
+  def pegar_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    app_tables.carona.row_update(vaga1 = self.vaga1)
+    pass
+
 

@@ -130,6 +130,14 @@ components:
       background: '', bold: false, underline: false}
     name: vaga4
     layout_properties: {grid_position: 'ZYVSCA,HFKLDI'}
+  - type: Button
+    properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: pegar, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: pegar
+    layout_properties: {grid_position: 'CFTLEX,JQFXWM'}
+    event_bindings: {click: pegar_click}
 is_package: true
 custom_component: true
 properties:
@@ -140,6 +148,3 @@ properties:
 - {name: price, type: string, default_value: ''}
 - {name: vagas, type: number, default_value: ''}
 - {name: date, type: object}
-- {name: vagaa1, type: string, default_value: ''}
-- {name: vagaa2, type: string, default_value: ''}
-- {name: vagaa3, type: string, default_value: ''}
