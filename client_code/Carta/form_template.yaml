@@ -111,6 +111,9 @@ components:
       italic: false, background: '', bold: false, underline: false}
     name: textbox
     layout_properties: {grid_position: 'HAKBLJ,ZSJUJZ'}
+    data_bindings:
+    - {property: text, code: '''{} {} {} {}''.format(self.item[''vaga1''], self.item[''vaga2''],
+        self.item[''vaga3''], self.item[''vaga4''])', writeback: false}
   - type: Button
     properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: pegar, font_size: null, font: '', spacing_above: small,
