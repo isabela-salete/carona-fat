@@ -19,6 +19,7 @@ class Carta(CartaTemplate):
     self.vagaa.text = vagas
     self.dia.date = date
 
+
     # Any code you write here will run before the form opens.
 
 
