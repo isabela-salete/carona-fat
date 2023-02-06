@@ -22,5 +22,14 @@ class Carta(CartaTemplate):
 
     # Any code you write here will run before the form opens.
 
+  def pegar_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    user = anvil.users.get_user()
+    if user:
+      email = user["email"]
+      self.v1.text = email
+    pass
+
+
 
 
