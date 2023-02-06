@@ -28,7 +28,39 @@ class Carta(CartaTemplate):
     if user:
       email = user["email"]
       self.v1.text = email
-    pass
+    else: 
+     pass
+
+  def pegar_v2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    user = anvil.users.get_user()
+    if user:
+      email = user["email"]
+      self.v2.text = email
+    else: 
+     pass
+
+  def pegar_v3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    user = anvil.users.get_user()
+    if user:
+      email = user["email"]
+      self.v3.text = email
+    else: 
+     pass
+
+  def pegar_v4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    user = anvil.users.get_user()
+    if user:
+      email = user["email"]
+      self.v4.text = email
+    else: 
+     pass
+
+
+
+      
 
 
 
