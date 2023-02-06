@@ -66,11 +66,11 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
     name: label_3
-    layout_properties: {grid_position: 'BOTVEE,AYATJZ'}
+    layout_properties: {grid_position: 'NHOFOP,VTLMNI'}
   - type: Label
     properties: {}
     name: saida
-    layout_properties: {grid_position: 'BOTVEE,LRDQYS'}
+    layout_properties: {grid_position: 'NHOFOP,GHLUFI'}
   - type: Label
     properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Preço:', font_size: null, font: '', spacing_above: small,
@@ -83,16 +83,26 @@ components:
     name: dinheiro
     layout_properties: {grid_position: 'ZEGSHF,HRJFVY'}
   - type: Label
-    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '#f00a0a',
       visible: true, text: 'Vagas Totais:', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
     name: label_6
     layout_properties: {grid_position: 'XCREUF,TLGVKL'}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '#e90c0c',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
     name: vagaa
     layout_properties: {grid_position: 'XCREUF,XOUIIN'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Escolha sua vaga:', font_size: 23, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: 'theme:Gray
+        200', bold: false, underline: false, icon: ''}
+    name: label_10
+    layout_properties: {grid_position: 'YTUEEZ,JPGBZE'}
   - type: Label
     properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Vaga 1:', font_size: null, font: '', spacing_above: small,
@@ -137,17 +147,6 @@ components:
     properties: {}
     name: v4
     layout_properties: {grid_position: 'HJXOMG,YOJVXA'}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_4
-    layout_properties: {grid_position: 'CNMGRN,ZXSEDX'}
-  - type: Label
-    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: Escolha sua vaga!!, font_size: 23, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_10
-    layout_properties: {grid_position: 'LWKTCF,TKSCOJ'}
   - type: Button
     properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: vaga 1, font_size: null, font: '', spacing_above: small,
@@ -190,4 +189,3 @@ properties:
 - {name: price, type: string, default_value: ''}
 - {name: vagas, type: number, default_value: ''}
 - {name: date, type: object}
-- {name: va1, type: string, default_value: ''}

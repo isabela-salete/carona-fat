@@ -24,9 +24,14 @@ class Carta(CartaTemplate):
   def pegar_click(self, **event_args):
     """This method is called when the button is clicked"""
     user = anvil.users.get_user()
-    if user:
+    #vaga1 = self.v1.text
+    #vaga2 = self.v2.text
+    #vaga3 = self.v3.text
+    #vaga4 = self.v4.text
+    if user:  
       email = user["email"]
       self.v1.text = email
+      #anvil.server.call('add_vaga', vaga1, vaga2, vaga3, vaga4)
     else: 
      pass
 

@@ -1,5 +1,5 @@
 allow_embedding: false
-package_name: Projeto_Oficial
+package_name: Carona_FAT___Isa
 db_schema:
   users:
     title: Users
@@ -71,8 +71,25 @@ db_schema:
     - name: vaga4
       admin_ui: {order: 10, width: 200}
       type: string
+  vagas:
+    client: none
+    server: full
+    columns:
+    - name: vaga1
+      admin_ui: {order: 0, width: 200}
+      type: string
+    - name: vaga2
+      admin_ui: {order: 1, width: 200}
+      type: string
+    - name: vaga3
+      admin_ui: {order: 2, width: 200}
+      type: string
+    - name: vaga4
+      admin_ui: {order: 3, width: 200}
+      type: string
+    title: Table 3
 startup: {type: form, module: Base}
-name: Projeto Oficial
+name: Carona FAT - Isa
 startup_form: null
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
