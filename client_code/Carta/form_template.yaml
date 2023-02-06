@@ -190,4 +190,4 @@ properties:
 - {name: price, type: string, default_value: ''}
 - {name: vagas, type: number, default_value: ''}
 - {name: date, type: object}
-- {name: textbox, type: string, default_value: ''}
+- {name: va1, type: string, default_value: ''}
